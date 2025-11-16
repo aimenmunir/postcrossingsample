@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Postcrossing Tab Sorter",
+  "version": "1.0.1",
+  "description": "Sort all Postcrossing postcard tabs in the current window by their numeric ID (ascending).",
+  "permissions": ["tabs", "*://www.postcrossing.com/postcards/*"],
+  "browser_action": {
+    "default_title": "Sort Postcrossing Tabs",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "sort-postcrossing-tabs": {
+      "suggested_key": { "default": "Ctrl+Shift+Y" },
+      "description": "Sort Postcrossing tabs by numeric ID"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "postcrossing-tab-sorter@example.com",
+      "strict_min_version": "78.0"
+    }
+  }
+}

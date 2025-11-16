@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Postcrossing Tab Sorter</title>
+    <style>
+      body { font-family: system-ui, Arial, sans-serif; margin: 12px; }
+      button { padding: 8px 12px; border: 0; border-radius: 8px; cursor: pointer; }
+      #sort { background: #4b7bec; color: white; }
+      #status { margin-top: 10px; font-size: 12px; color: #334155; min-height: 16px; }
+    </style>
+  </head>
+  <body>
+    <h3>Postcrossing Tab Sorter</h3>
+    <p>Sort tabs like <code>https://www.postcrossing.com/postcards/CL-34269</code> by ID (ascending).</p>
+    <button id="sort">Sort Postcrossing Tabs</button>
+    <div id="status"></div>
+    <p style="font-size:12px;color:#64748b">Tip: use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd>.</p>
+    <script src="popup.js"></script>
+  </body>
+</html>
